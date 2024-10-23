@@ -4,64 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Alee Aouini</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+    
     <header>
-        <h1>Bienvenue sur mon portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#a-propos">À propos de moi</a></li>
-                <li><a href="#competences">Mes Compétences</a></li>
-                <li><a href="#certifications">Mes Certifications</a></li>
-                <li><a href="#cv">Mon CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Mon Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#a-propos">À propos de moi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#competences">Mes Compétences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certifications">Mes Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cv">Mon CV</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="a-propos">
-            <h2>À propos de moi</h2>
-            <img src="alee123.jpg" alt="Photo de Alee" class="photo"> 
-            <p>Je suis un développeur web passionné, étudiante en developpement web à ISET Tozeur. En janvier 2024, je commencerai un stage dans une entreprise de développement web, où je travaillerai sur des projets JavaScript. Maîtrisant les langages HTML et CSS, je m'intéresse également aux frameworks comme Angular et Symfony. Bilingue en français et en anglais, je suis prêt à relever de nouveaux défis technologiques.</p>
+    <main class="container mt-5">
+        
+        <section id="a-propos" class="mb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="alee123.jpg" alt="Photo de Alee" class="img-fluid rounded-circle mb-3"> 
+                </div>
+                <div class="col-md-8">
+                    <h2>À propos de moi</h2>
+                    <p>Je suis un développeur web passionné, étudiante en développement web à ISET Tozeur. En janvier 2024, je commencerai un stage dans une entreprise de développement web, où je travaillerai sur des projets JavaScript. Maîtrisant les langages HTML et CSS, je m'intéresse également aux frameworks comme Angular et Symfony. Bilingue en français et en anglais, je suis prêt à relever de nouveaux défis technologiques.</p>
+                    <a href="#contact" class="btn btn-primary">Me Contacter</a>
+                </div>
+            </div>
         </section>
 
-        <section id="competences">
+        
+        <section id="competences" class="mb-5">
             <h2>Mes Compétences</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Angular</li>
-                <li>Symfony</li>
-                <li>python</li>
-                <li>Bilingue français/anglais</li>
-            </ul>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML5 & CSS3</h5>
+                            <p class="card-text">Création de sites web modernes et responsives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript & Angular</h5>
+                            <p class="card-text">Développement de fonctionnalités dynamiques et d'applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Symfony & Python</h5>
+                            <p class="card-text">Développement backend et gestion de bases de données.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="certifications">
+        
+        <section id="certifications" class="mb-5">
             <h2>Mes Certifications</h2>
-            <ul>
-                <li>Attestation en gestion de projet Scrum, permettant d'acquérir des compétences en méthodologie Agile.</li>
-                <li>Certificat de premiers secours, démontrant mon engagement à la sécurité et au bien-être.</li>
-                <li>Attestation de participation à un hackathon, où j'ai collaboré sur des projets innovants en équipe.</li>
+            <ul class="list-group">
+                <li class="list-group-item">Attestation en gestion de projet Scrum <span class="badge bg-success">Scrum Master</span></li>
+                <li class="list-group-item">Certificat de premiers secours <span class="badge bg-danger">Secours</span></li>
+                <li class="list-group-item">Hackathon <span class="badge bg-primary">Innovation</span></li>
             </ul>
         </section>
 
-        <section id="cv">
+        
+        <section id="cv" class="mb-5">
             <h2>Mon CV</h2>
-            <p>Téléchargez mon CV ici : <a href="cv.pdf" target="_blank">Mon CV</a></p>
+            <p>Téléchargez mon CV ici : <a href="cv.pdf" target="_blank" class="btn btn-outline-secondary">Mon CV</a></p>
         </section>
 
-        <section id="contact">
+        
+        <section id="contact" class="mb-5">
             <h2>Contact</h2>
-            <p>Vous pouvez me contacter par email : <a href="mailto:aleeaouini@gmail.com">aleeaouini@gmail.com</a></p>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="text-center py-3 bg-light">
         <p>&copy; 2024 Portfolio Alee Aouini</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
